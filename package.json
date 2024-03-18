@@ -1,0 +1,7 @@
+{
+  "name": "@donutteam/typescript-config",
+  "version": "1.0.0",
+  "description": "Shared TypeScript configuration for Donut Team packages and projects.",
+  "author": "Donut Team",
+  "license": "MIT"
+}
