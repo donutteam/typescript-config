@@ -1,155 +1,67 @@
 {
-	"compilerOptions": {
+	"compilerOptions":
+	{
 		//
 		// Type Checking
 		//
 
 		"allowUnreachableCode": false,
 		"allowUnusedLabels": false,
-		"alwaysStrict": true,
-		"exactOptionalPropertyTypes": true,
+
+		// Rationale: This is annoying as hell to actually work with.
+		"exactOptionalPropertyTypes": false,
+
 		"noFallthroughCasesInSwitch": true,
-		"noImplicitAny": true,
 		"noImplicitOverride": true,
 		"noImplicitReturns": true,
-		"noImplicitThis": true,
 		"noPropertyAccessFromIndexSignature": true,
 		"noUncheckedIndexedAccess": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"strict": true,
-		"strictBindCallApply": true,
-		"strictFunctionTypes": true,
-		"strictNullChecks": true,
-		"strictPropertyInitialization": true,
-		"useUnknownInCatchVariables": true,
 
 		//
 		// Modules
 		//
 
-		"allowArbitraryExtensions": false,
-		"allowImportingTsExtensions": false,
-		"allowUmdGlobalAccess": false,
-		// "baseUrl": ".",
-		// "customConditions": [],
-		"module": "nodenext",
-		"moduleResolution": "nodenext",
-		// "moduleSuffixes": [],
-		"noResolve": false,
-		// "paths": [],
-		"resolveJsonModule": false,
-		"resolvePackageJsonExports": true,
-		"resolvePackageJsonImports": true,
-		// "rootDir": "",
-		// "rootDirs": [],
-		// "typeRoots": [],
-		// "types": [],
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+
+		// Rationale: I've been bitten in the ass before by having a side effect not actually happen silently.
+		"noUncheckedSideEffectImports": true,
 
 		//
 		// Emit
 		//
 
 		"declaration": true,
-		// "declarationDir": "",
 		"declarationMap": true,
-		"downlevelIteration": false,
-		"emitBOM": false,
-		"emitDeclarationOnly": false,
-		"importHelpers": false,
-		"importsNotUsedAsValues": "remove",
-		"inlineSourceMap": false,
-		"inlineSources": false,
-		// "mapRoot": "",
-		// "newLine": "",
-		"noEmit": false,
-		"noEmitHelpers": false,
-		"noEmitOnError": false,
-		// "outDir": "",
-		// "outFile": "",
-		"preserveConstEnums": true,
-		"preserveValueImports": false,
-		"removeComments": false,
+		"preserveConstEnums": true, // TODO: circle back to this after "isolatedModules" is reviewed
 		"sourceMap": true,
-		// "sourceRoot": "",
-		"stripInternal": false,
-
-		//
-		// JavaScript Support
-		//
-
-		"allowJs": false,
-		"checkJs": false,
-		"maxNodeModuleJsDepth": 0,
-
-		//
-		// Editor Support
-		//
-
-		"disableSizeLimit": false,
-		"plugins": [],
 
 		//
 		// Interop Constraints
 		//
 
+		// Rationale: This is convenient.
 		"allowSyntheticDefaultImports": true,
-		"esModuleInterop": true,
-		"forceConsistentCasingInFileNames": true,
-		"isolatedModules": false,
-		"preserveSymlinks": false,
-		"verbatimModuleSyntax": true,
-
-		//
-		// Backwards Compatibility
-		//
-
-		// N/A
 
 		//
 		// Language and Environment
 		//
 
-		"emitDecoratorMetadata": false,
-		"experimentalDecorators": false,
-		// "jsx": "",
-		// "jsxFactory": "",
-		// "jsxFragmentFactory": "",
-		// "jsxImportSource": "",
-		"lib": [
-			"esnext"
-		],
-		// "moduleDetection": "",
-		// "noLib": false,
-		// "reactNamespace": "",
-		"target": "esnext",
-		"useDefineForClassFields": true,
-
-		//
-		// Compiler Diagnostics
-		//
-
-		// N/A
-
-		//
-		// Projects
-		//
-
-		// N/A
+		"target": "ESNext",
 
 		//
 		// Output Formatting
 		//
 
 		"noErrorTruncation": true,
-		"preserveWatchOutput": false,
-		"pretty": true,
 
 		//
 		// Completeness
 		//
 
-		// "skipDefaultLibCheck": false,
-		"skipLibCheck": false
-	}
+		"skipLibCheck": false,
+	},
 }
